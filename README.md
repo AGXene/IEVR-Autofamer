@@ -76,6 +76,11 @@ The license used is **GNU General Public License, version 2** -> [https://www.gn
 </details>
 
 ### <ins>**Dependencies and tools used**</ins>
+
+<details>
+
+<summary>Open to view the dependencies</summary>
+
 The application was creted using the Windows Presentation Foundation (WPF) -> [https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/)
 
 - The progamming language used as C#, with the Visual Studio 2026 ide and code editor.
@@ -85,6 +90,8 @@ Packages installed:
 
 >[!IMPORTANT]
 > Some of the artistic elements and related styles are the property of **Level 5**, from **Inazuma Eleven Victory Road** video game.
+
+</details>
 
 ...
 
