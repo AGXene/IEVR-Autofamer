@@ -5,12 +5,12 @@
 
 > ◻️ Created with Windows Presentation Foundation (WPF).
 
-> ◻️ Only for pc users. Not available for console users.
+> ◻️ Only for pc users (Windows 10, 11). Not available for console users.
 
 ## $$\color{blue}⚽Welcome !!!$$
 
  
-Welcome to IEVR Autofarmer !!! Thanks to this tool, you can solve the problem of having to manually farm spirits, beans, or other items in each match, **allowing you to do it automatically without needing to be attentive to the computer or controller**, using a screen color detection system that knows when the game ends and starts.
+Welcome to IEVR Autofarmer !!! Thanks to this tool, you can solve the problem of having to manually farm spirits, beans, or other items in each match, **allowing you to do it automatically without needing to be attentive to the computer or controller**, using a screen color detection system that knows when the game ends and starts and an automatic input system (like an autoclicker, but intelligent).
 
 
 ![App Icon.](Docs/IEVR_Autofarmer_Logo.png)
@@ -22,6 +22,12 @@ Welcome to IEVR Autofarmer !!! Thanks to this tool, you can solve the problem of
 - Can select the number of matches to execute.
 
 ...
+
+### ❓❓ <ins> **Can I use the PC while the application is running?** </ins> ❓❓
+
+No, you shouldn't. The application works like an autoclicker but much more efficient, user-friendly, and intelligent. Using the computer during this process may introduce errors in certain phases of the execution.
+
+##
 
 ### ❓❓ <ins> **What is the difference compared to using a macro?** </ins> ❓❓
 
