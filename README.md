@@ -43,14 +43,21 @@ The application will have the following planned updates:
 4. Beans mode: autofarm the beans in the special training of story mode. [Incomplete ❌]
 5. Improve the tool configuration and general features...
 
-![Comparison Chart](Docs/Roadmap.png)
+![Roadmap](Docs/Roadmap.png)
 
 To continue updating the tool and streamlining the process, it would be a great help if you could help me with donations. The more support I receive, the sooner I will finish implementing all the features. After all, this is a project just for the fun of it, to help the Inazuma Eleven Victory Road community.
 
----------> ☕ [Link to help the developer](https://ko-fi.com/agxene) <----------
+<img src="https://cdn.prod.website-files.com/5c14e387dab576fe667689cf/670f5a01c01ea919180939bc_support_me_on_kofi_badge_blue.png" alt="kofi" width="40%" height="40%">
+
+❗ ---------> ☕ [Link to help the developer](https://ko-fi.com/agxene) <---------- ❗
+
+...
 
 
 ## $$\color{blue}❔How \space to \space Use$$
+
+Every mode has a similar way about how it works, all documented in their own .md file:
+- [Chronicle Mode - How to use it](Docs/Chronicle Mode_Help)
 
 ## $$\color{blue}🔗Dependencies \space and \space Licenses$$
 
