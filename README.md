@@ -66,9 +66,14 @@ Every mode has a similar way about how it works, all documented in their own .md
 
 ### <ins>**License**</ins>
 
+<details>
+
+<summary>Open to view the license</summary>
+
 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibEY1Im3eym1AJvkuTb7xcOC_MRLkBUKWiS8SxaTWxNsa1KYcwb_wM13Xz0q-3ENXF_YLpi3eMt8U-SvoiM0LhmJVqKqHNfDfUQOkTlWOBpGqI5Thw8iMg1fthS3xPqhbK4HKk/s1600/GNU-General-Public-License.png" alt="kofi" width="40%" height="40%">
 The license used is **GNU General Public License, version 2** -> [https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
+</details>
 
 ### <ins>**Dependencies and tools used**</ins>
 The application was creted using the Windows Presentation Foundation (WPF) -> [https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/)
