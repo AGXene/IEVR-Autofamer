@@ -35,8 +35,20 @@ A macro will never know when a game has finished, wasting time and reducing effi
 ...
 
 ## $$\color{blue}☕Roadmap \space and \space Support $$
+The application will have the following planned updates:
 
-roadmap and donnations
+1. Chronicle mode: autofarm in the chronicle mode. [Completed ✔️]
+2. Competition mode: autofarm in the vs mode (singleplayer mode). [⌛ In development]
+3. Online mode: autofarm in private lobbies. All the players must have the application. [Incomplete ❌]
+4. Beans mode: autofarm the beans in the special training of story mode. [Incomplete ❌]
+5. Improve the tool configuration and general features...
+
+![Comparison Chart](Docs/Roadmap.png)
+
+To continue updating the tool and streamlining the process, it would be a great help if you could help me with donations. The more support I receive, the sooner I will finish implementing all the features. After all, this is a project just for the fun of it, to help the Inazuma Eleven Victory Road community.
+
+---------> ☕ [Link to help the developer](https://ko-fi.com/agxene) <----------
+
 
 ## $$\color{blue}❔How \space to \space Use$$
 
