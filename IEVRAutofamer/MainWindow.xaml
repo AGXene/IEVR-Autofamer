@@ -1,0 +1,39 @@
+﻿<Window x:Class="IEVRAutofamer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IEVRAutofamer"
+        xmlns:viewmodel="clr-namespace:IEVRAutofamer.ViewModel" 
+        xmlns:views="clr-namespace:IEVRAutofamer.View.Views"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanMinimize"
+        Title="IEVR_Autofarmer" 
+        Height="720" Width="1280"
+        MinHeight="700" MinWidth="1350"
+        MaxHeight="900" MaxWidth="1520">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White"/>
+    </Window.Background>
+
+    <ContentControl Content="{Binding CurrentViewModel}">
+        <ContentControl.Resources>
+            
+            <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+                <views:HomeView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type viewmodel:ChronicleModeViewModel}">
+                <views:ChronicleModeView/>
+            </DataTemplate>
+            
+        </ContentControl.Resources>
+    </ContentControl>
+</Window>

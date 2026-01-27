@@ -1,0 +1,149 @@
+﻿<Window x:Class="IEVRAutofamer.View.Windows.LoadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IEVRAutofamer.View.Windows"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="LoadingWindow" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        Height="500" Width="500">
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" CornerRadius="0" CaptionHeight="0"/>
+    </WindowChrome.WindowChrome>
+
+    <Window.Background>
+        <SolidColorBrush Opacity="0" Color="White"/>
+    </Window.Background>
+
+    <!--Storyboards-->
+    <Window.Resources>
+        <BeginStoryboard x:Key="ScaleAnimation">
+            <Storyboard RepeatBehavior="Forever">
+            <!--Scale Animations-->
+            <DoubleAnimation 
+                    Storyboard.TargetName="ScaleImage8" 
+                    Storyboard.TargetProperty="ScaleX" 
+                    From="1" To="1.1" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:2.000"
+                    AutoReverse="True"/>
+            <DoubleAnimation 
+                   Storyboard.TargetName="ScaleImage8" 
+                   Storyboard.TargetProperty="ScaleY" 
+                   From="1" To="1.1" 
+                   BeginTime="00:00:00.000" 
+                   Duration="00:00:2.000"
+                   AutoReverse="True"/>
+        </Storyboard>
+        </BeginStoryboard>
+
+        <BeginStoryboard x:Key="RotateAnimation">
+            <Storyboard RepeatBehavior="Forever">
+                <!--Rotation Animations-->
+                <DoubleAnimation 
+                    Storyboard.TargetName="RotateImage5" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="720" To="0" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:10.000" />
+                <DoubleAnimation 
+                    Storyboard.TargetName="RotateImage4" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="1080" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:10.000" />
+                <DoubleAnimation 
+                    Storyboard.TargetName="RotateImage3" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="360" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:10.000" />
+                <DoubleAnimation 
+                    Storyboard.TargetName="RotateImage2" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="360" To="0" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:10.000" />
+                <DoubleAnimation 
+                    Storyboard.TargetName="RotateImage1" 
+                    Storyboard.TargetProperty="Angle" 
+                    From="0" To="720" 
+                    BeginTime="00:00:00.000" 
+                    Duration="00:00:10.000" />
+                
+            </Storyboard>
+        </BeginStoryboard>
+    </Window.Resources>
+
+    <!--UI Elements-->
+    <Grid>
+        <Image Source="/Resources/Images/LoadingComponents/Loading_Component_7.png"
+               Stretch="None"/>
+        <Image Source="/Resources/Images/LoadingComponents/Loading_Component_6.png"
+               Stretch="None"/>
+
+        <Image Source="/Resources/Images/LoadingComponents/Loading_Component_5.png"
+               Stretch="None">
+        <Image.LayoutTransform>
+            <TransformGroup>
+                <RotateTransform Angle="0" x:Name="RotateImage5"/>
+            </TransformGroup>
+        </Image.LayoutTransform>
+        </Image>
+
+        <Image Source="/Resources/Images/LoadingComponents/Loading_Component_4.png"
+               Stretch="None">
+        <Image.LayoutTransform>
+            <TransformGroup>
+                <RotateTransform Angle="0" x:Name="RotateImage4"/>
+            </TransformGroup>
+        </Image.LayoutTransform>
+        </Image>
+
+        <Image Source="/Resources/Images/LoadingComponents/Loading_Component_8.png"
+               Stretch="None" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform Y="10"/>
+                    <ScaleTransform ScaleX="1" ScaleY="1" x:Name="ScaleImage8"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        
+        <Image
+            Source="/Resources/Images/LoadingComponents/Loading_Component_3.png"
+            Stretch="None">
+        <Image.LayoutTransform>
+            <TransformGroup>
+                <RotateTransform Angle="0" x:Name="RotateImage3"/>
+            </TransformGroup>
+        </Image.LayoutTransform>
+        </Image>
+
+        <Image
+            Source="/Resources/Images/LoadingComponents/Loading_Component_2.png"
+            Stretch="None">
+        <Image.LayoutTransform>
+            <TransformGroup>
+                <RotateTransform Angle="0" x:Name="RotateImage2"/>
+            </TransformGroup>
+        </Image.LayoutTransform>
+        </Image>
+
+        <Image
+            Source="/Resources/Images/LoadingComponents/Loading_Component_1.png"
+            Stretch="None">
+            <Image.LayoutTransform>
+                <TransformGroup>
+                    <RotateTransform Angle="0" x:Name="RotateImage1"/>
+                </TransformGroup>
+            </Image.LayoutTransform>
+        </Image>
+        
+    </Grid>
+</Window>

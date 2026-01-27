@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="IEVRAutofamer.View.Views.ChronicleModeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IEVRAutofamer.View.Views"
+             xmlns:controls="clr-namespace:IEVRAutofamer.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+
+    <Grid Background="{StaticResource IEVRWhite}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition>
+            </RowDefinition>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+
+        <controls:TitleBar Panel.ZIndex="500"/>
+
+        <!--Body-->
+        
+        <Image Grid.Row="1"
+               Source="/Resources/Images/Patterns/Background_Pattern_Extended.png"
+               Stretch="None"
+               Opacity="0.5"/>
+
+        <Image Grid.Row="1"
+               Source="/Resources/Images/Patterns/Backrgound_Pixels_Pattern.png"
+               Stretch="UniformToFill"
+               Opacity="0.5"/>
+
+        <controls:MenuTitleContainer Grid.Row="1"
+                                     TitleText="CHRONICLE MODE"
+                                     TitleImage="/Resources/Images/Menu_TitleContainer.png"
+                                     VerticalAlignment="Top"
+                                     Margin="-12,75,0,0"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="600"/>
+                <ColumnDefinition Width="700" MaxWidth="700"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <controls:ReturnButton Source="/Resources/Images/Buttons/Return_Button_2.png"
+                                       VerticalAlignment="Top"
+                                       HorizontalAlignment="Left"
+                                       Margin="-10,-3,0,0"
+                                       OnClicked="{Binding OnReturnClicked}"/>
+                
+                <StackPanel VerticalAlignment="Center" Orientation="Vertical"
+                            Margin="55,35,0,0">
+
+                    <!--Activate audio-->
+                    <controls:ToggleOption Color="#FF243244"
+                                           IsChecked="{Binding AudioActivation, Mode=TwoWay}"
+                                           Text="Activate audio:"
+                                           Command="{Binding OnAudioActivated}"/>
+
+                    <!--Audio execution type-->
+                    <controls:DropdownMenuOption TextColor="#FF243244"
+                                                 DropdownText="{Binding AudioExecutionTypeDropdownText,Mode=TwoWay}"
+                                                 Text="Audio execution type:"
+                                                 IsOpen="{Binding AudioExecutionTypeDropdownOpen,Mode=TwoWay}">
+                        <controls:DropdownMenuOption.MenuContent>
+                            <Border Style="{StaticResource DropdownMenuBorder}">
+                                <StackPanel>
+                                    <Button Content="Every Match" Style="{StaticResource DropdownMenuButton}"
+                                            Command="{Binding OnAudioExecutionType}"
+                                            CommandParameter="EveryMatch"/>
+                                    <Button Content="On Autofarm Finishes" Style="{StaticResource DropdownMenuButton}"
+                                            Command="{Binding OnAudioExecutionType}"
+                                            CommandParameter="AutofarmFinished"/>
+                                </StackPanel>
+                            </Border>
+                        </controls:DropdownMenuOption.MenuContent>
+                    </controls:DropdownMenuOption>
+                    
+                    <!--Target monitor-->
+                    <controls:DropdownMenuOption TextColor="#FF243244"
+                                                 DropdownText="{Binding MonitorTargetDropdownText, Mode=TwoWay}"
+                                                 Text="Target monitor:"
+                                                 MenuContent="{Binding MonitorTargetDropdownContent}"
+                                                 IsOpen="{Binding MonitorTargetDropdownOpen, Mode=TwoWay}">
+                    </controls:DropdownMenuOption>
+
+                    <!--Total matches-->
+                    <controls:NumberFieldOption Value="{Binding TotalMatches, Mode=TwoWay}"
+                                                Text="Nº Total matches:"
+                                                Color="#FF243244"/>
+                                              
+
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Bottom">
+
+                    <Button Width="300"
+                            Height="25"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            Content="Learn how to use the tool ?"
+                            FontSize="15"
+                            Foreground="#FF8599C1"
+                            FontWeight="Bold"
+                            Command="{Binding OnLearnMoreAboutTool}"/>
+
+                    <controls:RunAutofarmButton ImageSource="/Resources/Images/Buttons/Aufoarm_Desactivated.png"
+                                         OnActivated="/Resources/Images/Buttons/Autofarm_Activated.png"
+                                         OnDeactivated="/Resources/Images/Buttons/Aufoarm_Desactivated.png"
+                                         OnCanceled="/Resources/Images/Buttons/Autofarm_Canceled.png"
+                                         Margin="0,0,0,25"
+                                         Command="{Binding OnAutofarmCommand}"/>
+                </StackPanel>
+   
+                
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <controls:ResultsPanel TotalMatches="{Binding TotalMatchesResults, Mode=TwoWay}"
+                                       TutorialDuration="{Binding TotalDurationResults, Mode=TwoWay}"
+                                       AverageDuration="{Binding TotalAverageResults, Mode=TwoWay}"
+                                       MatchSource="/Resources/Images/Icon_Field.png"
+                                       DurationSource="/Resources/Images/Icon_Duration.png"
+                                       AverageSource="/Resources/Images/Icon_DurationPerMatch.png"/>
+            </Grid>
+        </Grid>
+
+        <!--Footer-->
+
+        <controls:BottomBar Grid.Row="2"/>
+    </Grid>
+</UserControl>

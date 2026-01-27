@@ -1,0 +1,86 @@
+﻿<UserControl x:Class="IEVRAutofamer.View.UserControls.BottomBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IEVRAutofamer.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="1280">
+    
+    <Grid Background="{StaticResource IEVRDarkBlue}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition MaxWidth="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        
+        <!--Left Column-->
+
+        <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    Margin="20,0,0,0">
+            
+            <Label Content="{StaticResource appTitleVersion}" FontSize="15" FontWeight="Bold" 
+                   Foreground="{StaticResource IEVRWhite}"/>
+            
+            <Label Content="/  Developed By Xene" FontSize="15" 
+                   FontWeight="Bold" FontStyle="Italic"
+                   Foreground="{StaticResource IEVRWhite}"/>
+            
+        </StackPanel>
+        
+        
+        <!--Center Column-->
+
+        <StackPanel Grid.Column="1" 
+                    Orientation="Horizontal" 
+                    Margin="5,0,0,0"
+                    HorizontalAlignment="Center">
+
+            <!--GitHub-->
+            <Button Background="Transparent" BorderBrush="Transparent" 
+                    VerticalAlignment="Center"
+                    Click="OnGitHub_Click">
+
+                <Image Source="/Resources/Images/Logos/GitHub.png" 
+                Stretch="Fill" 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Height="25"
+                Margin="10,0,3,0"/>
+            </Button>
+
+            <!--X-->
+            <Button Background="Transparent" BorderBrush="Transparent" 
+                    VerticalAlignment="Center"
+                    Click="OnX_Click">
+
+                <Image Source="/Resources/Images/Logos/X.png" 
+                Stretch="Fill" 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Height="24"
+                Margin="8,0,3,0"/>
+            </Button>
+
+            <!--Patreon-->
+            <Button Background="Transparent" BorderBrush="Transparent" 
+                    VerticalAlignment="Center"
+                    Click="OnPatreon_Click">
+
+                <Image Source="/Resources/Images/Logos/Patreon.png" 
+                Stretch="Fill" 
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Height="26"
+                Margin="8,0,3,0"/>
+            </Button>
+        </StackPanel>
+
+        
+        <!--Right Column-->
+
+    </Grid>
+</UserControl>

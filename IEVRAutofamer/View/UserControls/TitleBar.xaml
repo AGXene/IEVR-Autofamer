@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="IEVRAutofamer.View.UserControls.TitleBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IEVRAutofamer.View.UserControls"
+             mc:Ignorable="d" 
+             MouseLeftButtonDown="Window_MouseLeftButtonDown"
+             d:DesignHeight="40" d:DesignWidth="1280">
+
+    <Grid Background="#FFCECECE">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        
+        <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Left">
+
+            <Image Source="/Resources/Images/Logos/IEVRR_Autofarmer - Logo.png"
+                   Margin="10,0,0,0"
+                   Width="30"/>
+            
+            <TextBlock Text="IEVR Autofarm"
+                       VerticalAlignment="Center"
+                       Margin="10,0,0,0"
+                       FontSize="13"
+                       FontWeight="Bold"
+                       Foreground="{StaticResource IEVRDarkBlue}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="Minimize" 
+                    Content="-" 
+                    Width="40"
+                    Height="40"
+                    FontSize="23"
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    Click="Minimize_Click"/>
+            
+            <Button x:Name="Help" 
+                    Content="❔" 
+                    Width="40"
+                    Height="40"
+                    FontSize="18"
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    Click="Help_Click"/>
+            
+            <Button x:Name="Close" 
+                    Content="X" 
+                    Width="40"
+                    Height="40"
+                    FontSize="18"
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    Click="Close_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>

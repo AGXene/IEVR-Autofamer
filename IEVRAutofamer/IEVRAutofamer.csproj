@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>Resources\Icon\IEVRR_Autofarmer - Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Icon\IEVRR_Autofarmer - Logo.ico" />
+    <None Remove="Resources\Images\Backrgound_Pixels_Pattern.png" />
+    <None Remove="Resources\Images\Buttons\Aufoarm_Desactivated.png" />
+    <None Remove="Resources\Images\Buttons\Autofarm_Activated.png" />
+    <None Remove="Resources\Images\Buttons\Autofarm_Canceled.png" />
+    <None Remove="Resources\Images\Buttons\Chronichle Mode.png" />
+    <None Remove="Resources\Images\Buttons\Return_Button_1.png" />
+    <None Remove="Resources\Images\Buttons\Return_Button_2.png" />
+    <None Remove="Resources\Images\Buttons\Return_Button_3.png" />
+    <None Remove="Resources\Images\Buttons\Work In Progress.png" />
+    <None Remove="Resources\Images\DropDown_Arrow.png" />
+    <None Remove="Resources\Images\Icon_Duration.png" />
+    <None Remove="Resources\Images\Icon_DurationPerMatch.png" />
+    <None Remove="Resources\Images\Icon_Field.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_1.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_2.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_3.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_4.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_5.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_6.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_7.png" />
+    <None Remove="Resources\Images\LoadingComponents\Loading_Component_8.png" />
+    <None Remove="Resources\Images\Logo.png" />
+    <None Remove="Resources\Images\Logos\GitHub.png" />
+    <None Remove="Resources\Images\Logos\IEVRR_Autofarmer - Logo.png" />
+    <None Remove="Resources\Images\Logos\Patreon.png" />
+    <None Remove="Resources\Images\Logos\X.png" />
+    <None Remove="Resources\Images\Logo_Juego.png" />
+    <None Remove="Resources\Images\Menu_TitleContainer.png" />
+    <None Remove="Resources\Images\Patterns\Background_Pattern_Extended.png" />
+    <None Remove="Resources\Images\Results_Background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icon\IEVRR_Autofarmer - Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfScreenHelper" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icon\IEVRR_Autofarmer - Logo.ico" />
+    <Resource Include="Resources\Images\Buttons\Aufoarm_Desactivated.png" />
+    <Resource Include="Resources\Images\Buttons\Autofarm_Activated.png" />
+    <Resource Include="Resources\Images\Buttons\Autofarm_Canceled.png" />
+    <Resource Include="Resources\Images\Buttons\Return_Button_1.png" />
+    <Resource Include="Resources\Images\Buttons\Return_Button_2.png" />
+    <Resource Include="Resources\Images\Buttons\Return_Button_3.png" />
+    <Resource Include="Resources\Images\DropDown_Arrow.png" />
+    <Resource Include="Resources\Images\Icon_Duration.png" />
+    <Resource Include="Resources\Images\Icon_DurationPerMatch.png" />
+    <Resource Include="Resources\Images\Icon_Field.png" />
+    <Resource Include="Resources\Images\Logos\GitHub.png" />
+    <Resource Include="Resources\Images\Logos\IEVRR_Autofarmer - Logo.png" />
+    <Resource Include="Resources\Images\Logos\Patreon.png" />
+    <Resource Include="Resources\Images\Logos\X.png" />
+    <Resource Include="Resources\Images\Menu_TitleContainer.png" />
+    <Resource Include="Resources\Images\Patterns\Background_Pattern_Extended.png" />
+    <Resource Include="Resources\Images\Patterns\Backrgound_Pixels_Pattern.png" />
+    <Resource Include="Resources\Images\Buttons\Chronichle Mode.png" />
+    <Resource Include="Resources\Images\Buttons\Work In Progress.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_1.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_2.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_3.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_4.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_5.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_6.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_7.png" />
+    <Resource Include="Resources\Images\LoadingComponents\Loading_Component_8.png" />
+    <Resource Include="Resources\Images\Logo.png" />
+    <Resource Include="Resources\Images\Logo_Juego.png" />
+    <Resource Include="Resources\Images\Results_Background.png" />
+    <Resource Include="Resources\Sounds\Sound_ProcessFinished.wav" />
+  </ItemGroup>
+
+</Project>

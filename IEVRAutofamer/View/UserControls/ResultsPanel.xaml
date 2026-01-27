@@ -1,0 +1,94 @@
+﻿<UserControl x:Class="IEVRAutofamer.View.UserControls.ResultsPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IEVRAutofamer.View.UserControls"
+             xmlns:controls="clr-namespace:IEVRAutofamer.View.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="850" d:DesignWidth="800"
+             x:Name="root">
+
+    <Grid>
+        <Image x:Name="panelImage" Source="/Resources/Images/Results_Background.png"
+               Stretch="Fill"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Stretch"
+               Margin="0,-5,0,-3"
+               Width="700"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="1">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+
+                    <StackPanel Margin="0,50,125,0">
+                        
+                        <TextBlock Text="- RESULTS -"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontSize="36"
+                                   FontWeight="Bold"
+                                   Foreground="#FF6B819E"/>
+
+                        <TextBlock x:Name="startDateLabel"
+                                   Text="{Binding Date, ElementName=root,Mode=TwoWay}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Top"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="#FF8396AF"/>
+
+                    </StackPanel>
+                </Grid>
+ 
+            </Grid>
+
+            <Grid Grid.Row="2">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="570"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1">
+
+                    <StackPanel 
+                                HorizontalAlignment="Center"
+                                Margin="75,-25,0,0">
+
+                        <controls:ResultsPanelElement x:Name="matchesElement"
+                                                      Title="Total nº of Matches -> "
+                                                      Result="{Binding TotalMatches, ElementName=root, Mode=TwoWay}"
+                                                      Icon="{Binding MatchSource, ElementName=root}"/>
+                        
+                        <controls:ResultsPanelElement x:Name="durationElement"
+                                                      Title="Total Duration -> "
+                                                      Result="{Binding TutorialDuration, ElementName=root, Mode=TwoWay}"
+                                                      Icon="{Binding DurationSource, ElementName=root}"/>
+                        
+                        <controls:ResultsPanelElement x:Name="averageElement"
+                                                      Title="Average Match Duration -> "
+                                                      Result="{Binding AverageDuration, ElementName=root, Mode=TwoWay}"
+                                                      Icon="{Binding AverageSource, ElementName=root}"/>
+
+                    </StackPanel>
+                    
+                </Grid>
+            </Grid>
+        
+        </Grid>
+    </Grid>
+</UserControl>

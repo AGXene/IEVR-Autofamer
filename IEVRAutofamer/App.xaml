@@ -1,0 +1,28 @@
+﻿<Application x:Class="IEVRAutofamer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:IEVRAutofamer"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <!--Project Colors-->
+            <SolidColorBrush Color ="#06458b" x:Key="IEVRDarkBlue"/>
+            <SolidColorBrush Color ="#0b67b5" x:Key="IEVRBlue"/>
+            <SolidColorBrush Color ="#ddb137" x:Key="IEVRYellow"/>
+            <SolidColorBrush Color ="#d6d6d6" x:Key="IEVRWhite"/>
+            
+            <!--Version-->
+            <system:String x:Key="appTitleVersion">IEVR Autofarmer v.1.0.0b</system:String>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/ResourcesDictonaries/DropdownMenuDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
+    
