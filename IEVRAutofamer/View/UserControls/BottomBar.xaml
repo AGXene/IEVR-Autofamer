@@ -70,7 +70,7 @@
                     VerticalAlignment="Center"
                     Click="OnPatreon_Click">
 
-                <Image Source="/Resources/Images/Logos/Patreon.png" 
+                <Image Source="/Resources/Images/Logos/Ko-Fi_2.png" 
                 Stretch="Fill" 
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"

@@ -36,6 +36,8 @@
     <None Remove="Resources\Images\Logo.png" />
     <None Remove="Resources\Images\Logos\GitHub.png" />
     <None Remove="Resources\Images\Logos\IEVRR_Autofarmer - Logo.png" />
+    <None Remove="Resources\Images\Logos\Ko-Fi_1.png" />
+    <None Remove="Resources\Images\Logos\Ko-Fi_2.png" />
     <None Remove="Resources\Images\Logos\Patreon.png" />
     <None Remove="Resources\Images\Logos\X.png" />
     <None Remove="Resources\Images\Logo_Juego.png" />
@@ -70,6 +72,8 @@
     <Resource Include="Resources\Images\Icon_Field.png" />
     <Resource Include="Resources\Images\Logos\GitHub.png" />
     <Resource Include="Resources\Images\Logos\IEVRR_Autofarmer - Logo.png" />
+    <Resource Include="Resources\Images\Logos\Ko-Fi_1.png" />
+    <Resource Include="Resources\Images\Logos\Ko-Fi_2.png" />
     <Resource Include="Resources\Images\Logos\Patreon.png" />
     <Resource Include="Resources\Images\Logos\X.png" />
     <Resource Include="Resources\Images\Menu_TitleContainer.png" />
