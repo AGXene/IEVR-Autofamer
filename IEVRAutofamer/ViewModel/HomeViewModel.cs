@@ -35,7 +35,7 @@ namespace IEVRAutofamer.ViewModel
 
         private void DevelopedByXene_Clicked()
         {
-            ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=wpV-gGA4PSk&list=RDwpV-gGA4PSk&start_radio=1");
+            ApplicationUtilities.OpenWebsite("https://github.com/AGXene");
         }
     }
 }

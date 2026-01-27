@@ -20,7 +20,7 @@ namespace IEVRAutofamer.View.UserControls
 
         private void Help_Click(object sender, RoutedEventArgs e)
         {
-            ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=wpV-gGA4PSk&list=RDwpV-gGA4PSk&start_radio=1");
+            ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/tree/master?tab=readme-ov-file");
         }
 
         private void Close_Click(object sender, RoutedEventArgs e)

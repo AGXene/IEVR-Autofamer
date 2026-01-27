@@ -15,7 +15,7 @@
             <SolidColorBrush Color ="#d6d6d6" x:Key="IEVRWhite"/>
             
             <!--Version-->
-            <system:String x:Key="appTitleVersion">IEVR Autofarmer v.1.0.0b</system:String>
+            <system:String x:Key="appTitleVersion">IEVR Autofarmer v.1.0.0</system:String>
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/ResourcesDictonaries/DropdownMenuDictionary.xaml"/>

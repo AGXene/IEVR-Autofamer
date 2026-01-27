@@ -117,7 +117,7 @@ namespace IEVRAutofamer.ViewModel
             try
             {
 
-                ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1");
+                ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/blob/master/Docs/ChronicleMode_Help.md");
             }
             catch
             {

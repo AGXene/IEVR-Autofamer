@@ -15,17 +15,17 @@ namespace IEVRAutofamer.View.UserControls
 
         private void OnGitHub_Click(object sender, RoutedEventArgs e)
         {
-            ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=wpV-gGA4PSk&list=RDwpV-gGA4PSk&start_radio=1");
+            ApplicationUtilities.OpenWebsite("https://github.com/AGXene");
         }
 
         private void OnX_Click(object sender, RoutedEventArgs e)
         {
-            ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=wpV-gGA4PSk&list=RDwpV-gGA4PSk&start_radio=1");
+            ApplicationUtilities.OpenWebsite("https://x.com/AG_Xene");
         }
 
         private void OnPatreon_Click(object sender, RoutedEventArgs e)
         {
-            ApplicationUtilities.OpenWebsite("https://www.youtube.com/watch?v=wpV-gGA4PSk&list=RDwpV-gGA4PSk&start_radio=1");
+            ApplicationUtilities.OpenWebsite("https://ko-fi.com/agxene");
         }
     }
 }
