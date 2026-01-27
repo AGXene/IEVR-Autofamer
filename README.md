@@ -54,14 +54,52 @@ To continue updating the tool and streamlining the process, it would be a great 
 ...
 
 
-## $$\color{blue}❔How \space to \space Use$$
+## $$\color{blue}❔How \space to \space Use \space It$$
 
 Every mode has a similar way about how it works, all documented in their own .md file:
-- [Chronicle Mode - How to use it](Docs/Chronicle Mode_Help)
+- [Chronicle Mode - How to use it](Docs/ChronicleMode_Help.md)
+
+...
+
 
 ## $$\color{blue}🔗Dependencies \space and \space Licenses$$
 
-## $$\color{blue}📄Changelog \space and \space Links $$
+### <ins>**License**</ins>
+
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibEY1Im3eym1AJvkuTb7xcOC_MRLkBUKWiS8SxaTWxNsa1KYcwb_wM13Xz0q-3ENXF_YLpi3eMt8U-SvoiM0LhmJVqKqHNfDfUQOkTlWOBpGqI5Thw8iMg1fthS3xPqhbK4HKk/s1600/GNU-General-Public-License.png" alt="kofi" width="40%" height="40%">
+The license used is **GNU General Public License, version 2** -> [https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 
-[https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/)
+### <ins>**Dependencies and tools used**</ins>
+The application was creted using the Windows Presentation Foundation (WPF) -> [https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/)
+
+- The progamming language used as C#, with the Visual Studio 2026 ide and code editor.
+
+Packages installed:
+-  WpfScreenHelper (2.1.1) from micdenny -> [https://www.nuget.org/packages/WpfScreenHelper](https://www.nuget.org/packages/WpfScreenHelper)
+
+>[!IMPORTANT]
+> Some of the artistic elements and related styles are the property of **Level 5**, from **Inazuma Eleven Victory Road** video game.
+
+...
+
+## $$\color{blue}📄Releases \space and \space Other \space resources $$
+
+### <ins>**Releases**</ins>
+
+- 💿 Last update available ->
+- 📁 Go to releases page ->
+
+### <ins>**Images**</ins>
+
+<details>
+
+<summary>Open to view images of the application</summary>
+
+*Main view*
+![Main view](Docs/MainPageScreenshot.PNG)
+
+*Chronicle mode view*
+![Chronicle mode view](Docs/ResultsScreenshot.PNG)
+
+</details>
