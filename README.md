@@ -5,7 +5,7 @@
 
 > ◻️ Created with Windows Presentation Foundation (WPF).
 
-> ◻️ Only for pc users (Windows 10, 11). Not available for console users.
+> ◻️ Only for pc users (Windows x86 x64 & Portable). Not available for console users.
 
 ## $$\color{blue}⚽Welcome !!!$$
 
