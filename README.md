@@ -1,11 +1,13 @@
 # IEVR Autofamer
 > [!NOTE]
-> This tool was developed by <ins>**AG_Xene**</ins>. Its current status is "**under development**" -> its functionalities will continue to be expanded in order to improve the tool and provide an amazing user experience.
+> This tool was developed by <ins>**AG_Xene**</ins> for the Inazuma Eleven Victory Road video game. Its current status is "**under development**" -> its functionalities will continue to be expanded in order to improve the tool and provide an amazing user experience.
 
+> ◻️ A tool for the Inazuma Eleven Victory Road video game.
 
 > ◻️ Created with Windows Presentation Foundation (WPF).
 
 > ◻️ Only for pc users (Windows x86 x64 & Portable). Not available for console users.
+
 
 ## $$\color{blue}⚽Welcome !!!$$
 
