@@ -105,8 +105,8 @@ Packages installed:
 
 ### <ins>**Releases**</ins>
 
-- 💿 Last update available ->
-- 📁 Go to releases page ->
+- 💿 Last update available -> [https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0](https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0)
+- 📁 Go to releases page -> [https://github.com/AGXene/IEVR-Autofamer/releases](https://github.com/AGXene/IEVR-Autofamer/releases)
 
 ### <ins>**Images**</ins>
 
