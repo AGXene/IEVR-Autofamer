@@ -1,11 +1,13 @@
 # IEVR Autofamer
 > [!NOTE]
-> This tool was developed by <ins>**AG_Xene**</ins>. Its current status is "**under development**" -> its functionalities will continue to be expanded in order to improve the tool and provide an amazing user experience.
+> This tool was developed by <ins>**AG_Xene**</ins> for the Inazuma Eleven Victory Road video game. Its current status is "**under development**" -> its functionalities will continue to be expanded in order to improve the tool and provide an amazing user experience.
 
+> ◻️ A tool for the Inazuma Eleven Victory Road video game.
 
 > ◻️ Created with Windows Presentation Foundation (WPF).
 
-> ◻️ Only for pc users (Windows 10, 11). Not available for console users.
+> ◻️ Only for pc users (Windows x86 x64 & Portable). Not available for console users.
+
 
 ## $$\color{blue}⚽Welcome !!!$$
 
@@ -105,8 +107,8 @@ Packages installed:
 
 ### <ins>**Releases**</ins>
 
-- 💿 Last update available ->
-- 📁 Go to releases page ->
+- 💿 Last update available -> [https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0](https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0)
+- 📁 Go to releases page -> [https://github.com/AGXene/IEVR-Autofamer/releases](https://github.com/AGXene/IEVR-Autofamer/releases)
 
 ### <ins>**Images**</ins>
 
