@@ -45,7 +45,7 @@ namespace IEVRAutofamer.Model
                 await InputSystem.AutoClick(4, 100, () => InputSystem.ArrowDownKey());
                 await Task.Delay(50);
                 InputSystem.EnterKey();
-                await InputSystem.AutoClick(10, 1500, () => InputSystem.EnterKey());
+                await InputSystem.AutoClick(10, 1000, () => InputSystem.EnterKey());
             }
         }
 
