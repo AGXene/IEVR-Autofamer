@@ -1,6 +1,6 @@
 # How To Use - Competition Mode
 
-The chronicles mode is the menu used to automatically farm in the game's chronicles mode of Inazuma Eleven Victory Road.
+The competition mode is the menu used to automatically farm in the free match in competition mode of Inazuma Eleven Victory Road.
 
 ![Button Image](Chronichle_Mode_Button.png)
 
