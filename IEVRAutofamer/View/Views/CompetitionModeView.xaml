@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="IEVRAutofamer.View.Views.ChronicleModeView"
+﻿<UserControl x:Class="IEVRAutofamer.View.Views.CompetitionModeView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,6 +7,7 @@
              xmlns:controls="clr-namespace:IEVRAutofamer.View.UserControls"
              mc:Ignorable="d" 
              d:DesignHeight="720" d:DesignWidth="1280">
+
 
     <Grid Background="{StaticResource IEVRWhite}">
         <Grid.RowDefinitions>
@@ -21,7 +22,7 @@
         <controls:TitleBar Panel.ZIndex="500"/>
 
         <!--Body-->
-        
+
         <Image Grid.Row="1"
                Source="/Resources/Images/Patterns/Background_Pattern_Extended.png"
                Stretch="None"
@@ -33,9 +34,9 @@
                Opacity="0.5"/>
 
         <controls:MenuTitleContainer Grid.Row="1"
-                                     TitleText="CHRONICLE MODE"
+                                     TitleText="COMPETITION MODE"
                                      TitleImage="/Resources/Images/Menu_TitleContainer.png"
-                                     IconImage="/Resources/Images/Chronicles Icon.png"
+                                     IconImage="/Resources/Images/Competition Icon.png"
                                      VerticalAlignment="Top"
                                      Margin="-12,75,0,0"/>
 
@@ -52,7 +53,7 @@
                                        HorizontalAlignment="Left"
                                        Margin="-10,-3,0,0"
                                        OnClicked="{Binding OnReturnClicked}"/>
-                
+
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical"
                             Margin="55,35,0,0">
 
@@ -80,7 +81,7 @@
                             </Border>
                         </controls:DropdownMenuOption.MenuContent>
                     </controls:DropdownMenuOption>
-                    
+
                     <!--Target monitor-->
                     <controls:DropdownMenuOption TextColor="#FF243244"
                                                  DropdownText="{Binding MonitorTargetDropdownText, Mode=TwoWay}"
@@ -93,7 +94,7 @@
                     <controls:NumberFieldOption Value="{Binding TotalMatches, Mode=TwoWay}"
                                                 Text="Nº Total matches:"
                                                 Color="#FF243244"/>
-                                              
+
 
                 </StackPanel>
 
@@ -116,8 +117,8 @@
                                          Margin="0,0,0,25"
                                          Command="{Binding OnAutofarmCommand}"/>
                 </StackPanel>
-   
-                
+
+
             </Grid>
 
             <Grid Grid.Column="1">

@@ -17,10 +17,13 @@
     <None Remove="Resources\Images\Buttons\Autofarm_Activated.png" />
     <None Remove="Resources\Images\Buttons\Autofarm_Canceled.png" />
     <None Remove="Resources\Images\Buttons\Chronichle Mode.png" />
+    <None Remove="Resources\Images\Buttons\Competition Mode.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_1.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_2.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_3.png" />
     <None Remove="Resources\Images\Buttons\Work In Progress.png" />
+    <None Remove="Resources\Images\Chronicles Icon.png" />
+    <None Remove="Resources\Images\Competition Icon.png" />
     <None Remove="Resources\Images\DropDown_Arrow.png" />
     <None Remove="Resources\Images\Icon_Duration.png" />
     <None Remove="Resources\Images\Icon_DurationPerMatch.png" />
@@ -63,9 +66,12 @@
     <Resource Include="Resources\Images\Buttons\Aufoarm_Desactivated.png" />
     <Resource Include="Resources\Images\Buttons\Autofarm_Activated.png" />
     <Resource Include="Resources\Images\Buttons\Autofarm_Canceled.png" />
+    <Resource Include="Resources\Images\Buttons\Competition Mode.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_1.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_2.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_3.png" />
+    <Resource Include="Resources\Images\Chronicles Icon.png" />
+    <Resource Include="Resources\Images\Competition Icon.png" />
     <Resource Include="Resources\Images\DropDown_Arrow.png" />
     <Resource Include="Resources\Images\Icon_Duration.png" />
     <Resource Include="Resources\Images\Icon_DurationPerMatch.png" />

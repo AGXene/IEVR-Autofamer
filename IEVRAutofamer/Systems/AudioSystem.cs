@@ -1,4 +1,5 @@
-﻿using System.Windows.Media;
+﻿using System.Media;
+using System.Windows;
 
 namespace IEVRAutofamer.Systems
 {
@@ -10,24 +11,27 @@ namespace IEVRAutofamer.Systems
 
     internal class AudioSystem
     {
-        private const string k_processFinishedSound = "../../Resources/Sounds/Sound_ProcessFinished.wav";
-        private const string k_processFinishedSoundDebug = "X:\\Projects\\Inazuma Eleven\\IEVR_Autofarmer_App\\IEVRAutofamer\\IEVRAutofamer\\Resources\\Sounds\\Sound_ProcessFinished.wav";
+        //private const string k_processFinishedSound = "../../Resources/Sounds/Sound_ProcessFinished.wav";
+        //private const string k_processFinishedSoundDebug = "X:\\Projects\\Inazuma Eleven\\IEVR_Autofarmer_App\\IEVRAutofamer\\IEVRAutofamer\\Resources\\Sounds\\Sound_ProcessFinished.wav";
         
         public static void PlaySound(string path)
         {
-            Uri uri = new Uri(path, UriKind.Relative);
-            var media = new MediaPlayer();
-            media.Open(uri);
-            media.Play();
+            SoundPlayer player = new SoundPlayer();
+            try
+            {
+                player.SoundLocation = path;
+                player.Play();
+            }
+            catch
+            {
+                MessageBox.Show("Audio couldn't be found at the following path -> " + path);
+            }
+
         }
 
         public static void PlayFinishedSound()
         {
-#if DEBUG
-            PlaySound(k_processFinishedSoundDebug);
-#else
-            PlaySound(k_processFinishedSound);
-#endif
+            PlaySound("Sound_ProcessFinished.wav");
         }
     }
 }

@@ -35,14 +35,14 @@
                Stretch="UniformToFill"
                Opacity="0.5"/>
 
-        <Image Grid.Row="1"
+        <!--<Image Grid.Row="1"
                Source="/Resources/Images/Logo_Juego.png"
                Stretch="Fill"
                Width="265"
                Height="165"
                HorizontalAlignment="Right"
                VerticalAlignment="Top"
-               Margin="0,50,35,0"/>
+               Margin="0,50,35,0"/>-->
 
         <controls:MenuTitleContainer Grid.Row="1"
                                      TitleText="WELCOME TO AUTOFARMER!"
@@ -59,9 +59,9 @@
                                  ButtonText="CHRONICLE MODE"
                                  OnClicked="{Binding OnChronicleModeClicked}"/>
 
-            <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Work In Progress.png"
+            <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Competition Mode.png"
                                  ButtonText="COMPETITION MODE"
-                                 OnClicked="{Binding OnInProgressClicked}"/>
+                                 OnClicked="{Binding OnCompetitionModeClicked}"/>
             
             <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Work In Progress.png"
                                  ButtonText="ONLINE MODE"

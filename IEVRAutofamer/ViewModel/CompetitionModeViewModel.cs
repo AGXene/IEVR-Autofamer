@@ -9,7 +9,7 @@ using WpfScreenHelper;
 
 namespace IEVRAutofamer.ViewModel
 {
-    class ChronicleModeViewModel : ViewModelBase
+    internal class CompetitionModeViewModel : ViewModelBase
     {
         public readonly RelayCommand NavigateChronicleModeCommand;
 
@@ -37,7 +37,7 @@ namespace IEVRAutofamer.ViewModel
         private Screen _currentScreen;
 
 
-        private ChronicleModeProcessor _processor;
+        private CompetitionModeProcessor _processor;
 
         public object MonitorTargetDropdownContent
         {
@@ -47,7 +47,7 @@ namespace IEVRAutofamer.ViewModel
 
         //========================= INITIALIZATION =========================
 
-        public ChronicleModeViewModel(NavigationStore navigationStore)
+        public CompetitionModeViewModel(NavigationStore navigationStore)
         {
             NavigateChronicleModeCommand =
                 new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
@@ -76,13 +76,13 @@ namespace IEVRAutofamer.ViewModel
             }
             else
             {
-                MessageBox.Show("Chronicles mode auto-farming is currently running. Close it before going to the home menu.");
+                MessageBox.Show("Competition mode auto-farming is currently running. Close it before going to the home menu.");
             }
         }
 
         private void OnAutofarmCommand_Executed()
         {
-            _processor = _processor ?? new ChronicleModeProcessor();
+            _processor = _processor ?? new CompetitionModeProcessor();
 
             _processor.OnStarted -= OnStarted;
             _processor.OnStarted += OnStarted;
@@ -124,7 +124,7 @@ namespace IEVRAutofamer.ViewModel
             try
             {
 
-                ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/blob/master/Docs/ChronicleMode_Help.md");
+                ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/blob/master/Docs/CompetitionMode_Help.md");
             }
             catch
             {
@@ -183,7 +183,7 @@ namespace IEVRAutofamer.ViewModel
             foreach (var item in screens)
             {
                 Button button = new Button();
-    
+
                 button.Command = OnMonitorTargetSelected;
                 button.Style = (Style)dictionary["DropdownMenuButton"];
                 button.CommandParameter = item;
@@ -224,4 +224,5 @@ namespace IEVRAutofamer.ViewModel
             }
         }
     }
+
 }

@@ -3,11 +3,11 @@ using System.Diagnostics;
 
 namespace IEVRAutofamer.Model
 {
-    internal class ChronicleModeProcessor : Processor
+    public class CompetitionModeProcessor : Processor
     {
         protected override IProcessData SetProcessData()
         {
-            var data = new ChronicleModeData();
+            var data = new CompetitionModeData();
             return data;
         }
 
@@ -40,12 +40,14 @@ namespace IEVRAutofamer.Model
                     await Task.Delay(2500);
                 }
 
+                InputSystem.EnterKey();
+                await Task.Delay(1000);
                 InputSystem.ArrowLeftKey();
                 await Task.Delay(50);
-                await InputSystem.AutoClick(4, 100, () => InputSystem.ArrowDownKey());
+                await InputSystem.AutoClick(3, 100, () => InputSystem.ArrowDownKey());
                 await Task.Delay(50);
                 InputSystem.EnterKey();
-                await InputSystem.AutoClick(10, 1500, () => InputSystem.EnterKey());
+                await InputSystem.AutoClick(10, 1000, () => InputSystem.EnterKey());
             }
         }
 
@@ -101,7 +103,7 @@ namespace IEVRAutofamer.Model
                     do
                     {
                         await Task.Delay(100);
-                        isScreenBlack = ScreenObserver.DetectIfBlackScreen(ProcessData.CurrentScreen,5);
+                        isScreenBlack = ScreenObserver.DetectIfBlackScreen(ProcessData.CurrentScreen, 5);
                         if (isScreenBlack)
                         {
                             timesScreenBlack += 1;

@@ -39,6 +39,16 @@ namespace IEVRAutofamer.View.UserControls
                 image.Source = value;
             }
         }
+        private ImageSource _iconImage;
+        public ImageSource IconImage
+        {
+            get { return _iconImage; }
+            set
+            {
+                _iconImage = value;
+                iconSource.Source= value;
+            }
+        }
 
         public MenuTitleContainer()
         {
