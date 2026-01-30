@@ -2,7 +2,7 @@
 
 The competition mode is the menu used to automatically farm in the free match in competition mode of Inazuma Eleven Victory Road.
 
-![Button Image](Chronichle_Mode_Button.png)
+![Button Image](Competition_Mode_Button.png)
 
 ## $$\color{blue}💻Options$$
 
