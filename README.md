@@ -66,6 +66,7 @@ To continue updating the tool and streamlining the process, it would be a great 
 
 Every mode has a similar way about how it works, all documented in their own .md file:
 - [Chronicle Mode - How to use it](Docs/ChronicleMode_Help.md)
+- [Competition Mode - How to use it](Docs/CompetitionMode_Help.md)
 
 ...
 
@@ -107,7 +108,7 @@ Packages installed:
 
 ### <ins>**Releases**</ins>
 
-- 💿 Last update available -> [https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0](https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.1.0.0)
+- 💿 Last update available -> [https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.2](https://github.com/AGXene/IEVR-Autofamer/releases/tag/IEVR_Autofarmer_v.2)
 - 📁 Go to releases page -> [https://github.com/AGXene/IEVR-Autofamer/releases](https://github.com/AGXene/IEVR-Autofamer/releases)
 
 ### <ins>**Images**</ins>
