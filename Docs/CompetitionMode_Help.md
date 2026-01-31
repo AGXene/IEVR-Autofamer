@@ -23,10 +23,10 @@ You can configure the following options in the menu:
 
 1. First, open the video game Inazuma Eleven Victory Road, and open the chronicle mode (fullscreen mode, in the main screen).
 2. Place your cursor over the team you want to play against (do not enter the difficulty menu)
-3. Click the "Run Autofarm" button (click into the map if the game application is not focused).
 
-![Results](Tutorial_ChronicleScreenShot.PNG)
+![Results](CompetitionMode_HowToStart.PNG)
 
+3. Click the "Run Autofarm" button (click into the map if the game application is not focused). You can do **windows + tab** to switch between applications.
 4. Check if it's working correctly. If the application didn`t select the Heroic difficulty and the match hasn't started, stop the execution and start again. If it's working correctly, don't move the mouse or switch applications to avoid any error.
 5. Enjoy it!!!
 
