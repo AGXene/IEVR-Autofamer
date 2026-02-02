@@ -51,7 +51,7 @@ The application will have the following planned updates:
 4. Beans mode: autofarm the beans in the special training of story mode. [Incomplete ❌]
 5. Improve the tool configuration and general features...
 
-![Roadmap](Docs/Roadmap.png)
+![Roadmap](Docs/Roadmap.jpg)
 
 To continue updating the tool and streamlining the process, it would be a great help if you could help me with donations. The more support I receive, the sooner I will finish implementing all the features. After all, this is a project just for the fun of it, to help the Inazuma Eleven Victory Road community.
 
