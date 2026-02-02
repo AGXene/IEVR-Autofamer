@@ -67,6 +67,7 @@ To continue updating the tool and streamlining the process, it would be a great 
 Every mode has a similar way about how it works, all documented in their own .md file:
 - [Chronicle Mode - How to use it](Docs/ChronicleMode_Help.md)
 - [Competition Mode - How to use it](Docs/CompetitionMode_Help.md)
+- [Online Mode - How to use it](Docs/OnlineMode_Help.md)
 
 ...
 
