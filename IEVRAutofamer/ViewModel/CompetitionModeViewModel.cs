@@ -20,6 +20,20 @@ namespace IEVRAutofamer.ViewModel
         public ICommand OnLearnMoreAboutTool => new RelayCommand((o) => OnLearnMoreAboutTool_Executed());
         public ICommand OnAudioActivated => new RelayCommand((o) => OnAudioActivated_Executed());
 
+        public bool LowPerformanceActivation
+        {
+            get { return AppConfig.IsLowPerformanceActivated; }
+            set
+            {
+                AppConfig.IsLowPerformanceActivated = value;
+                if (value)
+                {
+                    MessageBox.Show("Activate this option if your match takes a long time to load or if the tool doesn't start the match.",
+                        "Low performance enabled!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                }
+            }
+        }
+
         public bool AudioActivation { get; set; }
         public string TotalMatches { get; set; }
         public AudioExecutionType AudioExecutionType { get; set; }

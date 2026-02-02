@@ -33,9 +33,17 @@
             <Image x:Name="iconSource"
                    Source="{Binding IconImage}"
                    Stretch="Fill"
-                   Width="100"
-                   Height="70"
-                   Margin="35,0,0,0"/>
+                   Height="115"
+                   Margin="5,0,0,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.6" ScaleY="0.6"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
 
         </StackPanel>
 

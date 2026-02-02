@@ -13,6 +13,7 @@ namespace IEVRAutofamer
         public static event Action<bool> OnReactivateAutofarmEvent;
         public static bool IsAutofarmRunning;
         public static bool IsAutofarmAllowed = true;
+        public static bool IsLowPerformanceActivated = false;
 
         public static Vector2 windowLastSize{ get; private set; }
         public static Vector2 windowLastPosition{ get; private set; }

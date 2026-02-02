@@ -9,7 +9,7 @@ using WpfScreenHelper;
 
 namespace IEVRAutofamer.ViewModel
 {
-    class ChronicleModeViewModel : ViewModelBase
+    internal class OnlineModeViewModel : ViewModelBase
     {
         public readonly RelayCommand NavigateChronicleModeCommand;
 
@@ -29,7 +29,7 @@ namespace IEVRAutofamer.ViewModel
                 if (value)
                 {
                     MessageBox.Show("Activate this option if your match takes a long time to load or if the tool doesn't start the match.",
-                        "Low performance enabled!", MessageBoxButton.OK,MessageBoxImage.Warning);
+                        "Low performance enabled!", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }
         }
@@ -51,7 +51,7 @@ namespace IEVRAutofamer.ViewModel
         private Screen _currentScreen;
 
 
-        private ChronicleModeProcessor _processor;
+        private OnlineModeProcessor _processor;
 
         public object MonitorTargetDropdownContent
         {
@@ -61,7 +61,7 @@ namespace IEVRAutofamer.ViewModel
 
         //========================= INITIALIZATION =========================
 
-        public ChronicleModeViewModel(NavigationStore navigationStore)
+        public OnlineModeViewModel(NavigationStore navigationStore)
         {
             NavigateChronicleModeCommand =
                 new NavigateCommand<HomeViewModel>(navigationStore, () => new HomeViewModel(navigationStore));
@@ -90,13 +90,13 @@ namespace IEVRAutofamer.ViewModel
             }
             else
             {
-                MessageBox.Show("Chronicles mode auto-farming is currently running. Close it before going to the home menu.");
+                MessageBox.Show("Online mode auto-farming is currently running. Close it before going to the home menu.");
             }
         }
 
         private void OnAutofarmCommand_Executed()
         {
-            _processor = _processor ?? new ChronicleModeProcessor();
+            _processor = _processor ?? new OnlineModeProcessor();
 
             _processor.OnStarted -= OnStarted;
             _processor.OnStarted += OnStarted;
@@ -137,8 +137,7 @@ namespace IEVRAutofamer.ViewModel
         {
             try
             {
-
-                ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/blob/master/Docs/ChronicleMode_Help.md");
+                ApplicationUtilities.OpenWebsite("https://github.com/AGXene/IEVR-Autofamer/blob/master/Docs/OnlineMode_Help.md");
             }
             catch
             {
@@ -198,7 +197,7 @@ namespace IEVRAutofamer.ViewModel
             foreach (var item in screens)
             {
                 Button button = new Button();
-    
+
                 button.Command = OnMonitorTargetSelected;
                 button.Style = (Style)dictionary["DropdownMenuButton"];
                 button.CommandParameter = item;

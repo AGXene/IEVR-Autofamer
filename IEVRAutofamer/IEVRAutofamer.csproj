@@ -18,6 +18,7 @@
     <None Remove="Resources\Images\Buttons\Autofarm_Canceled.png" />
     <None Remove="Resources\Images\Buttons\Chronichle Mode.png" />
     <None Remove="Resources\Images\Buttons\Competition Mode.png" />
+    <None Remove="Resources\Images\Buttons\Online_Mode_Button.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_1.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_2.png" />
     <None Remove="Resources\Images\Buttons\Return_Button_3.png" />
@@ -45,6 +46,7 @@
     <None Remove="Resources\Images\Logos\X.png" />
     <None Remove="Resources\Images\Logo_Juego.png" />
     <None Remove="Resources\Images\Menu_TitleContainer.png" />
+    <None Remove="Resources\Images\Online Icon.png" />
     <None Remove="Resources\Images\Patterns\Background_Pattern_Extended.png" />
     <None Remove="Resources\Images\Results_Background.png" />
   </ItemGroup>
@@ -67,6 +69,7 @@
     <Resource Include="Resources\Images\Buttons\Autofarm_Activated.png" />
     <Resource Include="Resources\Images\Buttons\Autofarm_Canceled.png" />
     <Resource Include="Resources\Images\Buttons\Competition Mode.png" />
+    <Resource Include="Resources\Images\Buttons\Online_Mode_Button.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_1.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_2.png" />
     <Resource Include="Resources\Images\Buttons\Return_Button_3.png" />
@@ -83,6 +86,7 @@
     <Resource Include="Resources\Images\Logos\Patreon.png" />
     <Resource Include="Resources\Images\Logos\X.png" />
     <Resource Include="Resources\Images\Menu_TitleContainer.png" />
+    <Resource Include="Resources\Images\Online Icon.png" />
     <Resource Include="Resources\Images\Patterns\Background_Pattern_Extended.png" />
     <Resource Include="Resources\Images\Patterns\Backrgound_Pixels_Pattern.png" />
     <Resource Include="Resources\Images\Buttons\Chronichle Mode.png" />

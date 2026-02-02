@@ -63,9 +63,9 @@
                                  ButtonText="COMPETITION MODE"
                                  OnClicked="{Binding OnCompetitionModeClicked}"/>
             
-            <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Work In Progress.png"
+            <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Online_Mode_Button.png"
                                  ButtonText="ONLINE MODE"
-                                 OnClicked="{Binding OnInProgressClicked}"/>
+                                 OnClicked="{Binding OnOnlineModeClicked}"/>
             
             <controls:MenuButton ButtonImage="/Resources/Images/Buttons/Work In Progress.png"
                                  ButtonText="BEANS MODE"

@@ -75,7 +75,7 @@
     <Grid>
         <StackPanel Orientation="Horizontal" 
                   VerticalAlignment="Center"
-                  Height="50">
+                  Height="45">
 
             <TextBlock x:Name="toggleText" Text="{Binding Text}"
                      FontSize="22"

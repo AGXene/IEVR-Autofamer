@@ -47,7 +47,9 @@ namespace IEVRAutofamer.Model
                 await InputSystem.AutoClick(3, 100, () => InputSystem.ArrowDownKey());
                 await Task.Delay(50);
                 InputSystem.EnterKey();
-                await InputSystem.AutoClick(10, 1000, () => InputSystem.EnterKey());
+
+                var lowPerformanceClick = AppConfig.IsLowPerformanceActivated ? 15 : 11;
+                await InputSystem.AutoClick(lowPerformanceClick, 1000, () => InputSystem.EnterKey());
             }
         }
 
@@ -56,11 +58,14 @@ namespace IEVRAutofamer.Model
             if (AppConfig.IsAutofarmRunning)
             {
                 Debug.WriteLine("2.=== Start Match Task ===");
-                await InputSystem.AutoClick(24, 1000, () => InputSystem.EnterKey());
+
+                var lowPerformanceClick = AppConfig.IsLowPerformanceActivated ? 30 : 23;
+                await InputSystem.AutoClick(lowPerformanceClick, 1000, () => InputSystem.EnterKey());
 
                 if (AppConfig.IsAutofarmRunning)
                 {
-                    await Task.Delay(1500);
+                    var lowPerformanceDelay = AppConfig.IsLowPerformanceActivated ? 3000 : 1500;
+                    await Task.Delay(lowPerformanceDelay);
                     InputSystem.CommanderKey();
                     await Task.Delay(1000);
                     await InputSystem.AutoClick(5, 1000, () => InputSystem.MouseClick());
@@ -99,6 +104,7 @@ namespace IEVRAutofamer.Model
 
                     int timesScreenBlack = 0;
                     bool isScreenBlack = true;
+                    int minimumChecks = AppConfig.IsLowPerformanceActivated ? 9 : 6;
 
                     do
                     {
@@ -110,9 +116,9 @@ namespace IEVRAutofamer.Model
                             Debug.WriteLine("Screen Black /// Times -> " + timesScreenBlack);
                         }
                     }
-                    while (isScreenBlack && timesScreenBlack < 6);
+                    while (isScreenBlack && timesScreenBlack < minimumChecks);
 
-                    if (timesScreenBlack >= 6)
+                    if (timesScreenBlack >= minimumChecks)
                     {
                         finished = true; //Match finished.
                     }

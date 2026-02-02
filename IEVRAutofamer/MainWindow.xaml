@@ -38,6 +38,10 @@
                 <views:CompetitionModeView/>
             </DataTemplate>
             
+            <DataTemplate DataType="{x:Type viewmodel:OnlineModeViewModel}">
+                <views:OnlineModeView/>
+            </DataTemplate>
+            
         </ContentControl.Resources>
     </ContentControl>
 </Window>

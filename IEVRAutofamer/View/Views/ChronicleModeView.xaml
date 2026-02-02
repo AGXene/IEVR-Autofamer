@@ -54,8 +54,12 @@
                                        OnClicked="{Binding OnReturnClicked}"/>
                 
                 <StackPanel VerticalAlignment="Center" Orientation="Vertical"
-                            Margin="55,35,0,0">
+                            Margin="55,50,0,0">
 
+                    <!--Activate audio-->
+                    <controls:ToggleOption Color="#FF243244"
+                                           IsChecked="{Binding LowPerformanceActivation, Mode=TwoWay}"
+                                           Text="Low performance:"/>
                     <!--Activate audio-->
                     <controls:ToggleOption Color="#FF243244"
                                            IsChecked="{Binding AudioActivation, Mode=TwoWay}"
@@ -113,7 +117,7 @@
                                          OnActivated="/Resources/Images/Buttons/Autofarm_Activated.png"
                                          OnDeactivated="/Resources/Images/Buttons/Aufoarm_Desactivated.png"
                                          OnCanceled="/Resources/Images/Buttons/Autofarm_Canceled.png"
-                                         Margin="0,0,0,25"
+                                         Margin="0,0,0,10"
                                          Command="{Binding OnAutofarmCommand}"/>
                 </StackPanel>
    

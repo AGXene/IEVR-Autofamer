@@ -1,9 +1,12 @@
 ﻿using IEVRAutofamer.Systems;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
 
 namespace IEVRAutofamer.Model
 {
-    internal class ChronicleModeProcessor : Processor
+    internal class OnlineModeProcessor : Processor
     {
         protected override IProcessData SetProcessData()
         {
@@ -107,7 +110,7 @@ namespace IEVRAutofamer.Model
                     do
                     {
                         await Task.Delay(100);
-                        isScreenBlack = ScreenObserver.DetectIfBlackScreen(ProcessData.CurrentScreen,5);
+                        isScreenBlack = ScreenObserver.DetectIfBlackScreen(ProcessData.CurrentScreen, 5);
                         if (isScreenBlack)
                         {
                             timesScreenBlack += 1;
