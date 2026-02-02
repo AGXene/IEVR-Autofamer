@@ -1,13 +1,14 @@
-# How To Use - Competition Mode
+# How To Use - Online Mode
 
 The competition mode is the menu used to automatically farm in the free match in competition mode of Inazuma Eleven Victory Road.
 
-![Button Image](Competition_Mode_Button.png)
+![Online Image](Online_Mode_Button.png)
 
 ## $$\color{blue}💻Options$$
 
 You can configure the following options in the menu:
 
+- Change to low performance (enable this option if your match takes a long time to load or if the match doesn't start). 
 - Turn audio on/off.
 - Choose the audio execution type (every match: will execute an audio whenever a match ends / autofarm finished: when all the matches finishes).
 - Target monitor: the screen on which the video game is located.
