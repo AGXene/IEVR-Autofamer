@@ -2,8 +2,8 @@
 
 The online mode will allow you to farm with another player in private online matches.
 
-> ![WARNING]
-> For this to work, both players must have the IEVR Autofarmer app downloaded and run it at the same time (more or less)
+> [!WARNING]
+> **For this to work, both players must have the IEVR Autofarmer app downloaded and run it at the same time (more or less).**
 
 ![Online Image](Online_Mode_Button.png)
 
