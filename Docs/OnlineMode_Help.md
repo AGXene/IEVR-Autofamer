@@ -3,7 +3,7 @@
 The online mode will allow you to farm with another player in private online matches.
 
 > [!WARNING]
-> **For this to work, both players must have the IEVR Autofarmer app downloaded and run it at the same time (more or less).** ¡¡¡ This option doesn't work with the "commander ladder" mode ¡¡¡
+> **For this to work, both players must have the IEVR Autofarmer app downloaded and run it at the same time (more or less).** ¡¡¡ This option doesn't work with the "**commander ladder**" mode ¡¡¡
 
 > [!CAUTION]
 > Errors may occur when using this mode. Any bugs or unexpected errors should be reported to the developer via the "issues" tab -> [https://github.com/AGXene/IEVR-Autofamer/issues](https://github.com/AGXene/IEVR-Autofamer/issues)
