@@ -28,7 +28,7 @@ namespace IEVRAutofamer.ViewModel
                 AppConfig.IsLowPerformanceActivated = value;
                 if (value)
                 {
-                    MessageBox.Show("Activate this option if your match takes a long time to load or if the tool doesn't start the match.",
+                    MessageBox.Show("Enable this option if your match takes a long time to load or if the match doesn't start.",
                         "Low performance enabled!", MessageBoxButton.OK,MessageBoxImage.Warning);
                 }
             }

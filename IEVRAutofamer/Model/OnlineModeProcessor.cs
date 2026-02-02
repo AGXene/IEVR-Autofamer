@@ -1,8 +1,5 @@
 ﻿using IEVRAutofamer.Systems;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Text;
 
 namespace IEVRAutofamer.Model
 {
@@ -10,13 +7,12 @@ namespace IEVRAutofamer.Model
     {
         protected override IProcessData SetProcessData()
         {
-            var data = new ChronicleModeData();
+            var data = new OnlineModeData();
             return data;
         }
 
         protected override async Task OnProcessExecuted()
         {
-            await SelectTeamTask();
             await StartMatchTask();
             await AutoclickUntilFinish();
             if (AppConfig.IsAutofarmRunning)
@@ -29,44 +25,20 @@ namespace IEVRAutofamer.Model
             }
         }
 
-        /// <summary>
-        /// Select the team.
-        /// </summary>
-        private async Task SelectTeamTask()
-        {
-            if (AppConfig.IsAutofarmRunning)
-            {
-                Debug.WriteLine("1.=== Select Team Task ===");
-                if (ProcessData.TotalMatches > 0)
-                {
-                    InputSystem.EnterKey();
-                    await Task.Delay(2500);
-                }
-
-                InputSystem.ArrowLeftKey();
-                await Task.Delay(50);
-                await InputSystem.AutoClick(4, 100, () => InputSystem.ArrowDownKey());
-                await Task.Delay(50);
-                InputSystem.EnterKey();
-
-                var lowPerformanceClick = AppConfig.IsLowPerformanceActivated ? 15 : 11;
-                await InputSystem.AutoClick(lowPerformanceClick, 1000, () => InputSystem.EnterKey());
-            }
-        }
-
         private async Task StartMatchTask()
         {
             if (AppConfig.IsAutofarmRunning)
             {
-                Debug.WriteLine("2.=== Start Match Task ===");
+                Debug.WriteLine("1.=== Start Match Task ===");
 
-                var lowPerformanceClick = AppConfig.IsLowPerformanceActivated ? 30 : 23;
+                InputSystem.EKey();
+                await Task.Delay(AppConfig.IsLowPerformanceActivated ? 17000 : 11000);
+                var lowPerformanceClick = AppConfig.IsLowPerformanceActivated ? 35 : 28;
                 await InputSystem.AutoClick(lowPerformanceClick, 1000, () => InputSystem.EnterKey());
 
                 if (AppConfig.IsAutofarmRunning)
                 {
-                    var lowPerformanceDelay = AppConfig.IsLowPerformanceActivated ? 3000 : 1500;
-                    await Task.Delay(lowPerformanceDelay);
+                    await Task.Delay(AppConfig.IsLowPerformanceActivated ? 3000 : 1500);
                     InputSystem.CommanderKey();
                     await Task.Delay(1000);
                     await InputSystem.AutoClick(5, 1000, () => InputSystem.MouseClick());
@@ -78,7 +50,7 @@ namespace IEVRAutofamer.Model
         {
             if (AppConfig.IsAutofarmRunning)
             {
-                Debug.WriteLine("3.=== Autoclick Until Finish Task ===");
+                Debug.WriteLine("2.=== Autoclick Until Finish Task ===");
 
                 //---- FIRST HALF ----
 

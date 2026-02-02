@@ -71,7 +71,6 @@ namespace IEVRAutofamer.View.UserControls
             };
             AppConfig.OnAutofarmStateChangedEvent += ChangeButtonVisuals;
             AppConfig.OnReactivateAutofarmEvent += ChangeButtonVisualsOnActivated;
-   
         }
 
         private void ChangeButtonVisuals(bool state)

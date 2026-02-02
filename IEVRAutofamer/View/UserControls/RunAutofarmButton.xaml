@@ -45,9 +45,11 @@
     </UserControl.Resources>
 
     <Grid>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center"
+        <Button x:Name="button"
+                HorizontalAlignment="Center" VerticalAlignment="Center"
                 Background="Transparent" BorderBrush="Transparent"
-                Command="{Binding Command, ElementName=root}">
+                Command="{Binding Command, ElementName=root}"
+                KeyboardNavigation.AcceptsReturn="False">
             <Image x:Name="runImage" Source="{Binding ImageSource}"
                    Width="440"
                    Height="120"/>

@@ -3,7 +3,7 @@ using WpfScreenHelper;
 
 namespace IEVRAutofamer.Model
 {
-    internal class OnlineModeData : IProcessData
+    internal struct OnlineModeData : IProcessData
     {
         public DateTime StartDate { get; set; }
         public DateTime FinishDate { get; set; }

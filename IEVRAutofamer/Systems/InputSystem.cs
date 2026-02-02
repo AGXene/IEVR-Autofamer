@@ -21,6 +21,7 @@ namespace IEVRAutofamer.Systems
         private const byte k_commanderKey = 0x55; //U key
         private const byte k_arrowKeyLeft = 0x25;
         private const byte k_arrowKeyDown = 0x28;
+        private const byte k_keyE = 0x45; //E key
         private const byte k_enterKey = 0x0D; //Enter
         private const byte k_keyDown = 0x0001;
         private const byte k_keyUp = 0x0002;
@@ -64,6 +65,12 @@ namespace IEVRAutofamer.Systems
         {
             keybd_event(k_enterKey, 0, k_keyDown | 0, 0);
             keybd_event(k_enterKey, 0, k_keyUp | 0, 0);
+        }
+
+        public static void EKey()
+        {
+            keybd_event(k_keyE, 0, k_keyDown | 0, 0);
+            keybd_event(k_keyE, 0, k_keyUp | 0, 0);
         }
 
         public static async Task AutoClick(int repetitions, int interval, Action onClick)

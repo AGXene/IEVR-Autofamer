@@ -44,18 +44,17 @@ namespace IEVRAutofamer.ViewModel
 
         private void OnInProgress_Clicked()
         {
-            MessageBoxResult result = new MessageBoxResult();
-            MessageBox.Show("This mode is under development. \r\nBeing more complex than the others, I will only develop it if I see interest and support for the project. Remember that you can help me by donating via the following link: https://ko-fi.com/agxene\r\n\r\nGo to the website?",
-                "Beans Mode",MessageBoxButton.YesNo, MessageBoxImage.Information, result);
+            var result = MessageBox.Show("This mode is under development. \r\n\r\nSince it is more complex than the others, I will only develop it if I see interest and support for the project. Remember that you can help me by donating via the following link: https://ko-fi.com/agxene\r\n\r\nGo to the website?",
+                "Beans Mode",MessageBoxButton.YesNo, MessageBoxImage.Information);
             if (result == MessageBoxResult.Yes)
             {
-                ApplicationUtilities.OpenWebsite("https://github.com/AGXene");
+                ApplicationUtilities.OpenWebsite("https://ko-fi.com/agxene");
             }
         }
 
         private void DevelopedByXene_Clicked()
         {
-            ApplicationUtilities.OpenWebsite("https://ko-fi.com/agxene");
+            ApplicationUtilities.OpenWebsite("https://github.com/AGXene");
         }
     }
 }
