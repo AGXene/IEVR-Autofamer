@@ -5,6 +5,9 @@ The online mode will allow you to farm with another player in private online mat
 > [!WARNING]
 > **For this to work, both players must have the IEVR Autofarmer app downloaded and run it at the same time (more or less).**
 
+> [!CAUTION]
+> Errors may occur when using this mode. Any bugs or unexpected errors should be reported to the developer via the "issues" tab -> [https://github.com/AGXene/IEVR-Autofamer/issues](https://github.com/AGXene/IEVR-Autofamer/issues)
+
 ![Online Image](Online_Mode_Button.png)
 
 ## $$\color{blue}💻Options$$
